@@ -1,5 +1,4 @@
 import { IsOptional, IsPositive, IsInt, IsString } from 'class-validator';
-import { PrimaryGeneratedColumn } from 'typeorm';
 
 /**
  * @description: 列表
@@ -28,7 +27,6 @@ export class PaginationVO {
  * @description: 公共vo
  */
 export class CommonVO {
-  @PrimaryGeneratedColumn('uuid')
   readonly id: string;
 
   readonly createTime: Date;
